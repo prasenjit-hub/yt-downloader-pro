@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "imageUrl": "https://via.placeholder.com/728x90.png?text=Your+Ad+Here",
+  "linkUrl": "https://your-sponsor-site.com",
+  "altText": "Sponsored Ad",
+  "width": 728,
+  "height": 90,
+  "dismissible": true
+}
