@@ -8,8 +8,11 @@ const SNAP_USER_COMMON_ENV: &str = "SNAP_USER_COMMON";
 
 #[derive(Clone)]
 pub struct PathsManager {
+  #[allow(dead_code)]
   is_microsoft_store_app: bool,
+  #[allow(dead_code)]
   is_portable_app: bool,
+  #[allow(dead_code)]
   is_snap_app: bool,
   app_dir: PathBuf,
   bin_dir: PathBuf,
@@ -62,14 +65,17 @@ impl PathsManager {
     }
   }
 
+  #[allow(dead_code)]
   pub fn is_microsoft_store_app(&self) -> bool {
     self.is_microsoft_store_app
   }
 
+  #[allow(dead_code)]
   pub fn is_portable_app(&self) -> bool {
     self.is_portable_app
   }
 
+  #[allow(dead_code)]
   pub fn is_snap_app(&self) -> bool {
     self.is_snap_app
   }
