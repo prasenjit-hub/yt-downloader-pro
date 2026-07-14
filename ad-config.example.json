@@ -1,8 +1,8 @@
 {
   "enabled": true,
-  "imageUrl": "https://via.placeholder.com/728x90.png?text=Your+Ad+Here",
-  "linkUrl": "https://your-sponsor-site.com",
-  "altText": "Sponsored Ad",
+  "imageUrl": "https://raw.githubusercontent.com/prasenjit-hub/ADS/main/banner.png",
+  "linkUrl": "https://example.com",
+  "altText": "Sponsored",
   "width": 728,
   "height": 90,
   "dismissible": true

@@ -71,9 +71,17 @@ const preferencesStore = usePreferencesStore();
 initStores().catch((e) => {
   console.error(e);
 }).finally(() => {
-  void invoke('app_ready');
+  try {
+    void invoke('app_ready');
+  } catch (e) {
+    console.warn('Tauri not available:', e);
+  }
   if (!__E2E__) {
-    startWindowWatcher();
+    try {
+      startWindowWatcher();
+    } catch (e) {
+      console.warn('Window watcher not available:', e);
+    }
   }
   app.mount('#app');
 });

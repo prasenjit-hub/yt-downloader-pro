@@ -18,7 +18,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 
-const AD_CONFIG_URL = 'https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/ad-config.json';
+const AD_CONFIG_URL = 'https://raw.githubusercontent.com/prasenjit-hub/ADS/main/ad-config.json';
 
 interface AdConfig {
   enabled: boolean;

@@ -9,13 +9,29 @@ import { registerShortcutListeners } from '../tauri/listeners/shortcuts.ts';
 
 export default {
   install() {
-    registerAppListeners();
-    registerMediaListeners();
-    registerProgressListeners();
-    registerDestinationListeners();
-    registerBinaryListeners();
-    registerUpdaterListeners();
-    registerDiagnosticsListeners();
-    registerShortcutListeners();
+    try {
+      registerAppListeners();
+    } catch { /* Tauri not available */ }
+    try {
+      registerMediaListeners();
+    } catch { /* Tauri not available */ }
+    try {
+      registerProgressListeners();
+    } catch { /* Tauri not available */ }
+    try {
+      registerDestinationListeners();
+    } catch { /* Tauri not available */ }
+    try {
+      registerBinaryListeners();
+    } catch { /* Tauri not available */ }
+    try {
+      registerUpdaterListeners();
+    } catch { /* Tauri not available */ }
+    try {
+      registerDiagnosticsListeners();
+    } catch { /* Tauri not available */ }
+    try {
+      registerShortcutListeners();
+    } catch { /* Tauri not available */ }
   },
 };

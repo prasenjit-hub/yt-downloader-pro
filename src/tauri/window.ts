@@ -6,7 +6,12 @@ import { notify } from './notifications';
 import { NotificationKind } from './types/app';
 
 export function startWindowWatcher(): void {
-  const windowHandle = getCurrentWindow();
+  let windowHandle: ReturnType<typeof getCurrentWindow>;
+  try {
+    windowHandle = getCurrentWindow();
+  } catch {
+    return;
+  }
   const progressStore = useMediaProgressStore();
   const stateStore = useMediaStateStore();
 
